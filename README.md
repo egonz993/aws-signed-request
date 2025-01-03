@@ -1,3 +1,8 @@
+#### Readme writed by: ChatGPT-4o
+
+___
+
+
 # AWS Signed Request for S3 API
 
 This Python project demonstrates how to make an authenticated AWS request using the AWS Signature Version 4 (SigV4) method. The script interacts with the AWS S3 service to list the contents of a bucket.
