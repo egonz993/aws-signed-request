@@ -1,7 +1,5 @@
 # AWS Documentation: https://docs.aws.amazon.com/
-
-from aws_cli import signed_request
-respose = ""
+signed_request = "function to be implemented"
 
 # aws s3 ls
 response = signed_request(
@@ -13,42 +11,37 @@ response = signed_request(
 )
 
 # aws ec2 describe-instances
-# response = signed_request(
-#     method = 'GET',
-#     service = 'ec2',
-#     host = 'ec2.amazonaws.com',
-#     endpoint = '/',
-#     request_parameters = 'Action=DescribeInstances&Version=2016-11-15'
-# )
+response = signed_request(
+    method = 'GET',
+    service = 'ec2',
+    host = 'ec2.amazonaws.com',
+    endpoint = '/',
+    request_parameters = 'Action=DescribeInstances&Version=2016-11-15'
+)
 
 # # aws ec2 describe-vpcs
-# response = signed_request(
-#     method = 'GET',
-#     service = 'ec2',
-#     host = 'ec2.amazonaws.com',
-#     endpoint = '/',
-#     request_parameters = 'Action=DescribeVpcs&Version=2016-11-15'
-# )
+response = signed_request(
+    method = 'GET',
+    service = 'ec2',
+    host = 'ec2.amazonaws.com',
+    endpoint = '/',
+    request_parameters = 'Action=DescribeVpcs&Version=2016-11-15'
+)
 
 # aws cloudfront list-distributions
-# response = signed_request(
-#     method = 'GET',
-#     service = 'cloudfront',
-#     host = 'cloudfront.amazonaws.com',
-#     endpoint = '/2020-05-31/distribution',
-#     request_parameters = ''
-# )
+response = signed_request(
+    method = 'GET',
+    service = 'cloudfront',
+    host = 'cloudfront.amazonaws.com',
+    endpoint = '/2020-05-31/distribution',
+    request_parameters = ''
+)
 
 # aws lambda list-functions
-# response = signed_request(
-#     method = 'GET',
-#     service = 'lambda',
-#     host = 'lambda.us-east-1.amazonaws.com',
-#     endpoint = '/2015-03-31/functions',
-#     request_parameters = ''
-# )
-
-
-print("\n\n***** AWS Response *****")
-print("statusCode", response.status_code)
-print(response.text)
+response = signed_request(
+    method = 'GET',
+    service = 'lambda',
+    host = 'lambda.us-east-1.amazonaws.com',
+    endpoint = '/2015-03-31/functions',
+    request_parameters = ''
+)
